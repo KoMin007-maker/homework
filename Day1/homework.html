@@ -1,0 +1,131 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            header {
+                background-color: aquamarine;
+                display : flex;
+                height: 50px;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 20px;
+            }
+            header a{
+                font-size: 20px;
+            }
+            nav {
+                display: flex;
+                gap: 20px;
+            }  
+            nav a {
+                text-decoration: none;
+                color: black;
+                font-size: 20px;
+                background-color: white;
+                padding: 4px;
+                border-radius: 3px;
+            }           
+            .flex {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .a {
+                background-color: blue;
+                height: 300px;
+                width: 80%;
+                padding : 10px 10px;
+                color: white;
+            }
+            .p{
+                background-color: black;
+                height: 300px;
+                width: 20%;
+                color : white;
+                padding : 10px 17px;
+            }
+
+            .p a {
+                text-decoration: none;
+                color: white;
+            }
+
+            footer {
+                display: flex;
+            }
+            .b {
+                background-color: red;
+                height: 300px;
+                width: 33.33%;
+                padding : 10px 10px;
+                color: white;
+            }
+            .c {
+                background-color: green;
+                height: 300px;
+                width: 33.33%;
+                padding : 10px 10px;
+                color: white;
+            }
+            .d {
+                background-color: yellow;
+                height: 300px;
+                width: 33.33%;
+                padding : 10px 10px;
+                color: white;
+            }
+            .foot {
+                background-color: chocolate;
+                height: 50px;
+                text-align: center;
+                padding: 15px;
+            }
+        </style>
+    </head>
+    <body> 
+        <header>
+            <a>LOGO</a>
+            <nav>
+                <a href="">home</a>
+                <a href="">About</a>
+                <a href="">Contact</a>
+            </nav>
+        </header>   
+        <footer>
+            <div class="b">
+                <h3>Product Title</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="c">
+                <h3>Product Title</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="d">
+                <h3>Product Title</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </footer> 
+        <div class="flex">
+            <div class="a">
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+            </div>
+            <div class="p">
+                <h3>Sidebar</h3>
+                <li><a href="">Facebook</a></li>
+                <li><a href="">google</a></li>
+            </div>
+        </div>
+        <div class="foot">
+            page footer
+        </div>
+    </body>
+    </html>

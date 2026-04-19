@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.footer-section {
+  background-color: #f9e7e1;
+  padding: 80px 40px 20px;
+  border-top-left-radius: 100px; 
+  border-top-right-radius: 100px; 
+  font-family: sans-serif;
+  color: #4a4a4a;
+  position: relative;
+}
+
+.footer-container {
+  /* display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto; */
+
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 30px;
+}
+
+.about-col {
+  flex: 1;
+  padding-right: 50px;
+}
+
+.footer-col h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.footer-col h4 {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.app-links {
+  /* display: flex; */
+  /* flex-direction: column; */
+}
+
+
+
+.app-links .img {
+  display: flex;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 0.8rem;
+  color: #888;
+}
+/* end of foot */
+
+
+@media (max-width: 768px) {
+  /* footer */
+  .footer-container {
+    /* grid-template-columns: 1fr 1fr;  */
+    gap: 20px;
+    text-align: left;
+  }
+
+  /* Hipcamp description အပိုင်းကို width အပြည့် (Column ၂ ခုစာ) ယူခိုင်းတာ */
+  .about-col {
+    grid-column: span 2; 
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  /* "Get to Know Us" နဲ့ "Plan with Us" က ပုံမှန်အတိုင်း 1fr စီနဲ့ ဘေးချင်းယှဉ်သွားမယ် */
+  .footer-col {
+    grid-column: span 1; 
+    margin-bottom: 30px;
+  }
+
+  /* "Let Us Help You" ကိုလည်း အောက်မှာ တစ်ကြောင်းတည်း အပြည့်ပေါ်စေချင်ရင် span 2 ပေးလို့ရပါတယ် */
+  /* ဒါမှမဟုတ် သူ့ဘေးမှာ column လွတ်နေတာ အဆင်မပြေရင် span 2 ပေးလိုက်ပါ */
+  .footer-col:last-of-type {
+    grid-column: span 2;
+  }
+
+  /* App links ကိုလည်း အောက်ဆုံးမှာ width အပြည့်ထားမယ် */
+  .app-links {
+    grid-column: span 2;
+    text-align: left;
+  }
+
+  .footer-section {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    padding: 60px 20px 20px;
+  }
+
+  .app-links img {
+    height: 40px;
+    margin-right: 10px;
+  }
+}
+    </style>
+</head>
+<body>
+    <footer class="footer-section">
+    <div class="footer-container">
+    
+    <div class="about-col">
+      <h4>Hipcamp is everywhere you want to camp.</h4>
+      <p>Discover unique experiences on ranches, nature preserves, farms, vineyards, and public campgrounds across the U.S. Book tent camping, treehouses, cabins, yurts, primitive backcountry sites, car camping, airstreams, tiny houses, RV camping, glamping tents and more.
+      </p>
+    </div>
+
+     
+
+    <div class="footer-col">
+      <h4>Get to Know Us</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Rules & Reservation Policies</a></li>
+        <li><a href="#">Accessibility</a></li>
+        <li><a href="#">Media center</a></li>
+        <li><a href="#">Site Map</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Plan with Us</h4>
+      <ul>
+        <li><a href="#">Find Trip Inspiration</a></li>
+        <li><a href="#">Build a Trip</a></li>
+        <li><a href="#">Buy a Pass</a></li>
+        <li><a href="#">Enter a Lottery</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Let Us Help You</h4>
+      <ul>
+        <li><a href="#">Your Account</a></li>
+        <li><a href="#">Your Reservations</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Help Center</a></li>
+        <li><a href="#">Submit Feedback</a></li>
+      </ul>
+    </div>
+
+    <div class="app-links">
+        <h4>Downloads on our app</h4>
+        <div class="img">
+          <img src="./assets/images/appstore.png" alt="App Store">
+          <img src="./assets/images/google-play-badge.png" alt="Play Store">
+        </div>  
+    </div>
+
+  </div>
+  <div class="footer-bottom">
+    <p>© 2020. All rights reserved.</p>
+  </div>
+</footer> 
+</body>
+</html>
